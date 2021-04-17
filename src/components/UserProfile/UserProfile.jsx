@@ -1,4 +1,4 @@
-import noimg from '../images/noimg.jpg';
+import noimg from '../../images/noimg.jpg';
 import PropTypes from 'prop-types';
 
 const UserProfile = ({ name, tag, location, avatar, followers, views, likes }) => {

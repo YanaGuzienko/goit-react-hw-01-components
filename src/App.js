@@ -1,7 +1,7 @@
-import UserProfile from './components/UserProfile';
-import Statistics from './components/Statistics';
-import FriendList from './components/FriendList';
-import TransactionHistory from './components/TransactionHistory';
+import UserProfile from './components/UserProfile/UserProfile';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/FriendList/FriendList';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
 
 import user from './data/user';
 import statisticalData from './data/statistical-data';
@@ -10,7 +10,7 @@ import items from './data/transactions';
 
 const App = () => {
   return (
-    <div>
+    <>
       <UserProfile
         name={user.name}
         tag={user.tag}
@@ -25,7 +25,7 @@ const App = () => {
       <Statistics stats={statisticalData} />
       <FriendList friends={friends} />
       <TransactionHistory items={items} />
-    </div>
+    </>
   );
 };
 

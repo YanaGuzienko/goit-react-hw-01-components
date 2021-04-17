@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import noimg from '../images/noimg.jpg';
+import noimg from '../../images/noimg.jpg';
 
 const FriendList = ({ friends }) => {
   return (
