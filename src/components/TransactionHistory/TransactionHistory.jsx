@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import scss from './TransactionHistory.module.scss';
 
 const TransactionHistory = ({ items }) => (
-  <table className={scss.transacion__history} frame='void'>
+  <table className={scss.transacion__history} rules='none'>
     <thead>
       <tr className={scss.items}>
         <th className={scss.title}>Type</th>

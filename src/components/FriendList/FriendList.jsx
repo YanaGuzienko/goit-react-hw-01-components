@@ -17,10 +17,6 @@ const FriendList = ({ friends }) => {
   );
 };
 
-FriendList.defaultProps = {
-  avatar: noimg,
-};
-
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({

@@ -1,7 +1,7 @@
 .transacion__history {
   margin-top: 30px;
   width: 800px;
-  border: 2px solid grey;
+  border: 2px solid #808080;
   background-color: honeydew;
   box-shadow: 0px 0px 10px 2px dimgray;
 }
@@ -14,7 +14,6 @@
   background-color: rgb(42, 203, 243);
   color: rgb(255, 255, 255);
   padding: 20px 0 20px 0;
-  // width: 100%;
 }
 
 .value {
@@ -28,10 +27,10 @@
   padding: 20px 0 20px 0;
 }
 
-// .title__value:not(:last-child) {
-//   border-right: 1px solid grey;
-// }
+.title__value:not(:last-child) {
+  border-right: 1px solid rgb(247, 222, 233);
+}
 
 .value:nth-child(2n) {
-  background-color: grey;
+  background-color: rgb(247, 222, 233);
 }
