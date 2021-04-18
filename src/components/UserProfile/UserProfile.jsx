@@ -1,27 +1,29 @@
 import noimg from '../../images/noimg.jpg';
 import PropTypes from 'prop-types';
+import scss from './UserProfile.module.scss';
 
 const UserProfile = ({ name, tag, location, avatar, followers, views, likes }) => {
   return (
-    <div className='profile'>
-      <div className='description'>
-        <img src={avatar} alt='Аватар пользователя' className='avatar' width='100' />
-        <p className='name'>{name}</p>
-        <p className='tag'>{tag}</p>
-        <p className='location'>{location}</p>
+    <div className={scss.profile}>
+      <div className={scss.description}>
+        <img src={avatar} alt='Аватар пользователя' className={scss.avatar} width='100' />
+        <p className={scss.name}>{name}</p>
+        <p className={scss.tag}>{tag}</p>
+        <p className={scss.location}>{location}</p>
       </div>
-      <ul className='stats'>
-        <li>
-          <span className='label'>Followers</span>
-          <span className='quantity'>{followers}</span>
+
+      <ul className={scss.stats}>
+        <li className={scss.list}>
+          <span className={scss.label}>Followers</span>
+          <span className={scss.quantity}>{followers}</span>
         </li>
-        <li>
-          <span className='label'>Views</span>
-          <span className='quantity'>{views}</span>
+        <li className={scss.list}>
+          <span className={scss.label}>Views</span>
+          <span className={scss.quantity}>{views}</span>
         </li>
-        <li>
-          <span className='label'>Likes</span>
-          <span className='quantity'>{likes}</span>
+        <li className={scss.list}>
+          <span className={scss.label}>Likes</span>
+          <span className={scss.quantity}>{likes}</span>
         </li>
       </ul>
     </div>

@@ -1,0 +1,37 @@
+.list {
+  margin-top: 30px;
+  width: 320px;
+  border: 2px solid grey;
+  background-color: honeydew;
+  box-shadow: 0px 0px 10px 2px dimgray;
+}
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 0 10px 0;
+  border: 1px solid grey;
+  background-color: honeydew;
+  box-shadow: 0px 0px 2px 1px dimgray;
+  border-radius: 6px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.avatar {
+  margin-right: 14px;
+}
+
+.name {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}

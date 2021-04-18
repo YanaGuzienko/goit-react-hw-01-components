@@ -1,21 +1,19 @@
 import PropTypes from 'prop-types';
 import noimg from '../../images/noimg.jpg';
+import scss from './FriendList.module.scss';
 
 const FriendList = ({ friends }) => {
   return (
-    <div>
-      <ul className='friend-list'>
-        {friends.map(({ avatar = noimg, name, isOnline, id }) => (
-          <li className='item' key={id}>
-            <span className='status'>
-              {isOnline}
-              <img className='avatar' src={avatar} alt='avatar' width='48' />
-              <p className='name'>{name}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={scss.list}>
+      {friends.map(({ avatar = noimg, name, isOnline, id }) => (
+        <li className={scss.item} key={id}>
+          <span className={scss.status} style={{ backgroundColor: isOnline ? '#ff0000' : '#008000' }}></span>
+          {isOnline}
+          <img className={scss.avatar} src={avatar} alt='avatar' width='48' />
+          <p className={scss.name}>{name}</p>
+        </li>
+      ))}
+    </ul>
   );
 };
 
